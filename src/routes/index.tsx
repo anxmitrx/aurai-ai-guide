@@ -36,7 +36,7 @@ function Home() {
           muted
           playsInline
           className="absolute inset-0 h-full w-full object-cover object-[80%_center] md:object-right lg:object-center"
-          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260618_174853_aac61aa2-0f3f-4cf1-bc78-7f657dd11164.mp4"
+          src="/__l5e/assets-v1/19f3988e-87e9-49f3-bf1f-680b8d2aac4c/hero-football.mp4"
         />
 
         <div className="absolute inset-0 z-10 flex flex-col px-4 py-4 sm:px-10 sm:py-8 lg:px-12">
