@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const pills = ["12 Clubs", "Floodlit Nights", "One Trophy"];
+const pills = ["10 teams", "Floodlit Nights", "One Trophy"];
 
 function Home() {
   const [email, setEmail] = useState("");
@@ -47,7 +47,7 @@ function Home() {
           <div className="flex flex-col pb-4 sm:mt-auto sm:flex-1 sm:flex-row sm:items-end sm:pb-12 lg:pb-16">
             <div className="flex flex-col gap-4 sm:gap-6">
               <h1 className="reveal font-askan max-w-[700px] text-[2rem] leading-[1.05] tracking-tight text-white sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem]">
-                Where India plays as one.
+                Not to be known but to be heard
               </h1>
               <p className="reveal max-w-[520px] text-xs leading-relaxed text-white/70 sm:text-base md:text-lg">
                 Unity Cup is the football tournament built for India's clubs, colleges and
