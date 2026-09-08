@@ -38,7 +38,7 @@ function Gallery() {
       title="Photos and videos from the pitch."
       intro="A look at how Unity Cup matchdays actually feel — the noise, the lights and the long walk to the final whistle."
     >
-      <div className="overflow-hidden rounded-3xl border border-white/10">
+      <div className="overflow-hidden rounded-3xl border border-ink/10">
         <video
           autoPlay
           loop
@@ -48,13 +48,13 @@ function Gallery() {
           className="h-[45vh] w-full object-cover sm:h-[60vh]"
         />
       </div>
-      <p className="mt-3 text-xs text-white/40">Season highlight film</p>
+      <p className="mt-3 text-xs text-ink/40">Season highlight film</p>
 
       <div className="mt-12 grid auto-rows-[180px] gap-4 sm:grid-cols-4 sm:auto-rows-[200px]">
         {shots.map((s) => (
           <figure
             key={s.caption}
-            className={`group relative overflow-hidden rounded-2xl border border-white/10 ${s.span}`}
+            className={`group relative overflow-hidden rounded-2xl border border-ink/10 ${s.span}`}
           >
             <img
               src={stadium}
@@ -64,7 +64,7 @@ function Gallery() {
               height={1080}
               className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-xs text-white">
+            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-xs text-ink">
               {s.caption}
             </figcaption>
           </figure>

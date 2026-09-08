@@ -38,14 +38,14 @@ function Register() {
             <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent/15">
               <Check className="h-7 w-7 text-accent" />
             </div>
-            <h2 className="font-askan mt-5 text-3xl text-white">Entry received</h2>
-            <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-white/60">
+            <h2 className="font-askan mt-5 text-3xl text-ink">Entry received</h2>
+            <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-ink/60">
               Thanks for registering. We'll verify the receipt and email your confirmation with
               fixture dates.
             </p>
             <Link
               to="/"
-              className="mt-7 inline-block rounded-full border border-white/15 px-6 py-3 text-sm text-white hover:bg-white/5"
+              className="mt-7 inline-block rounded-full border border-ink/15 px-6 py-3 text-sm text-ink hover:bg-primary/5"
             >
               Back to home
             </Link>
@@ -56,7 +56,7 @@ function Register() {
               e.preventDefault();
               setDone(true);
             }}
-            className="rounded-3xl border border-white/10 bg-card/60 p-6 sm:p-9"
+            className="rounded-3xl border border-ink/10 bg-card/60 p-6 sm:p-9"
           >
             <div className="flex flex-col gap-5">
               <Input label="Full name" placeholder="Your name" />
@@ -65,20 +65,20 @@ function Register() {
               <Input label="Email ID" type="email" placeholder="you@example.com" />
 
               <label className="flex flex-col gap-2">
-                <span className="text-xs tracking-wide text-white/50 uppercase">
+                <span className="text-xs tracking-wide text-ink/50 uppercase">
                   Payment receipt
                 </span>
-                <div className="flex items-center gap-3 rounded-2xl border border-dashed border-white/20 bg-black/30 px-4 py-5 transition-colors hover:border-primary/50">
+                <div className="flex items-center gap-3 rounded-2xl border border-dashed border-ink/20 bg-black/30 px-4 py-5 transition-colors hover:border-primary/50">
                   <Upload className="h-5 w-5 text-primary" />
                   <input
                     required
                     type="file"
                     accept="image/*,application/pdf"
                     onChange={(e) => setReceipt(e.target.files?.[0]?.name ?? null)}
-                    className="w-full text-sm text-white/70 file:mr-3 file:rounded-full file:border-0 file:bg-white file:px-4 file:py-2 file:text-xs file:font-medium file:text-gray-900"
+                    className="w-full text-sm text-ink/70 file:mr-3 file:rounded-full file:border-0 file:bg-primary file:px-4 file:py-2 file:text-xs file:font-medium file:text-primary-foreground"
                   />
                 </div>
-                <span className="text-xs text-white/40">
+                <span className="text-xs text-ink/40">
                   {receipt ? `Attached: ${receipt}` : "Screenshot or PDF of your entry fee payment"}
                 </span>
               </label>
@@ -89,7 +89,7 @@ function Register() {
               >
                 Submit registration
               </button>
-              <p className="text-xs leading-relaxed text-white/40">
+              <p className="text-xs leading-relaxed text-ink/40">
                 Entries are reviewed manually right now — nothing is stored online yet. Say the word
                 and I'll connect a database so every registration and receipt is saved for you.
               </p>
@@ -112,12 +112,12 @@ function Input({
 }) {
   return (
     <label className="flex flex-col gap-2">
-      <span className="text-xs tracking-wide text-white/50 uppercase">{label}</span>
+      <span className="text-xs tracking-wide text-ink/50 uppercase">{label}</span>
       <input
         required
         type={type}
         placeholder={placeholder}
-        className="rounded-full border border-white/10 bg-black/30 px-5 py-3.5 text-sm text-white placeholder:text-white/40 focus:border-primary/50 focus:outline-none"
+        className="rounded-full border border-ink/10 bg-black/30 px-5 py-3.5 text-sm text-ink placeholder:text-ink/40 focus:border-primary/50 focus:outline-none"
       />
     </label>
   );

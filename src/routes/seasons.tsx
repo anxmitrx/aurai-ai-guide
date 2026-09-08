@@ -64,17 +64,17 @@ function Seasons() {
         {seasons.map((s) => (
           <article
             key={s.n}
-            className="rounded-3xl border border-white/10 bg-card/60 p-6 transition-colors hover:border-primary/40 sm:p-8"
+            className="rounded-3xl border border-ink/10 bg-card/60 p-6 transition-colors hover:border-primary/40 sm:p-8"
           >
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
                 <p className="text-xs tracking-[0.3em] text-primary uppercase">{s.year}</p>
-                <h2 className="font-askan mt-1 text-3xl text-white sm:text-4xl">{s.n}</h2>
+                <h2 className="font-askan mt-1 text-3xl text-ink sm:text-4xl">{s.n}</h2>
               </div>
               <span
                 className={`rounded-full border px-4 py-1.5 text-xs ${
                   s.status === "Completed"
-                    ? "border-white/15 text-white/60"
+                    ? "border-ink/15 text-ink/60"
                     : "border-accent/40 text-accent"
                 }`}
               >
@@ -82,9 +82,9 @@ function Seasons() {
               </span>
             </div>
 
-            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/60">{s.note}</p>
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-ink/60">{s.note}</p>
 
-            <dl className="mt-6 grid gap-4 border-t border-white/10 pt-6 sm:grid-cols-4">
+            <dl className="mt-6 grid gap-4 border-t border-ink/10 pt-6 sm:grid-cols-4">
               {[
                 ["Champion", s.champion],
                 ["Runner-up", s.runner],
@@ -92,8 +92,8 @@ function Seasons() {
                 ["Teams", String(s.teams)],
               ].map(([k, v]) => (
                 <div key={k}>
-                  <dt className="text-xs tracking-wide text-white/40 uppercase">{k}</dt>
-                  <dd className="mt-1 text-sm text-white">{v}</dd>
+                  <dt className="text-xs tracking-wide text-ink/40 uppercase">{k}</dt>
+                  <dd className="mt-1 text-sm text-ink">{v}</dd>
                 </div>
               ))}
             </dl>

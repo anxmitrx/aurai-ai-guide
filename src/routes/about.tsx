@@ -65,15 +65,15 @@ function About() {
         ].map((c) => (
           <article
             key={c.t}
-            className="rounded-2xl border border-white/10 bg-card/60 p-6 transition-colors hover:border-primary/40"
+            className="rounded-2xl border border-ink/10 bg-card/60 p-6 transition-colors hover:border-primary/40"
           >
-            <h2 className="font-askan text-xl text-white">{c.t}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-white/60">{c.d}</p>
+            <h2 className="font-askan text-xl text-ink">{c.t}</h2>
+            <p className="mt-2 text-sm leading-relaxed text-ink/60">{c.d}</p>
           </article>
         ))}
       </div>
 
-      <h2 className="font-askan mt-20 text-center text-3xl tracking-tight text-white sm:text-4xl">
+      <h2 className="font-askan mt-20 text-center text-3xl tracking-tight text-ink sm:text-4xl">
         The organising members
       </h2>
 
@@ -81,7 +81,7 @@ function About() {
         {organisers.map((o) => (
           <article
             key={o.name}
-            className="group overflow-hidden rounded-3xl border border-white/10 bg-card/60"
+            className="group overflow-hidden rounded-3xl border border-ink/10 bg-card/60"
           >
             <img
               src={o.img}
@@ -92,9 +92,9 @@ function About() {
               className="h-80 w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
             />
             <div className="p-6">
-              <h3 className="font-askan text-2xl text-white">{o.name}</h3>
+              <h3 className="font-askan text-2xl text-ink">{o.name}</h3>
               <p className="mt-1 text-xs tracking-[0.2em] text-primary uppercase">{o.role}</p>
-              <p className="mt-3 text-sm leading-relaxed text-white/60">{o.bio}</p>
+              <p className="mt-3 text-sm leading-relaxed text-ink/60">{o.bio}</p>
             </div>
           </article>
         ))}

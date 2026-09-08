@@ -17,7 +17,7 @@ export function SiteNav() {
   return (
     <nav className="flex items-center justify-between">
       <div className="glass flex items-center rounded-2xl px-4 py-2.5 sm:px-6 sm:py-4">
-        <Link to="/" className="flex items-center gap-2.5 text-white">
+        <Link to="/" className="flex items-center gap-2.5 text-ink">
           <UnityLogo className="w-5 h-5 sm:w-7 sm:h-7" />
           <span className="font-askan text-base sm:text-xl tracking-wide">Unity Cup</span>
         </Link>
@@ -27,8 +27,8 @@ export function SiteNav() {
             <Link
               key={l.to}
               to={l.to}
-              className="text-sm text-white/70 transition-colors hover:text-white"
-              activeProps={{ className: "text-sm text-white" }}
+              className="text-sm text-ink/70 transition-colors hover:text-ink"
+              activeProps={{ className: "text-sm text-ink" }}
             >
               {l.label}
             </Link>
@@ -39,7 +39,7 @@ export function SiteNav() {
           type="button"
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="ml-4 text-white sm:ml-32 md:hidden"
+          className="ml-4 text-ink sm:ml-32 md:hidden"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
@@ -47,7 +47,7 @@ export function SiteNav() {
 
       <Link
         to="/register"
-        className="hidden rounded-full bg-white px-6 py-3 text-sm font-medium text-gray-900 transition-transform hover:scale-105 sm:block"
+        className="hidden rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-transform hover:scale-105 sm:block"
       >
         Register now
       </Link>
@@ -60,7 +60,7 @@ export function SiteNav() {
                 key={l.to}
                 to={l.to}
                 onClick={() => setOpen(false)}
-                className="text-white/90"
+                className="text-ink/90"
               >
                 {l.label}
               </Link>
@@ -68,7 +68,7 @@ export function SiteNav() {
             <Link
               to="/register"
               onClick={() => setOpen(false)}
-              className="mt-1 rounded-full bg-white px-4 py-3 text-center text-sm font-medium text-gray-900"
+              className="mt-1 rounded-full bg-primary px-4 py-3 text-center text-sm font-medium text-primary-foreground"
             >
               Register now
             </Link>

@@ -40,16 +40,16 @@ function Contact() {
           ].map((c) => (
             <div
               key={c.label}
-              className="flex items-start gap-4 rounded-2xl border border-white/10 bg-card/60 p-5"
+              className="flex items-start gap-4 rounded-2xl border border-ink/10 bg-card/60 p-5"
             >
               <c.icon className="mt-0.5 h-5 w-5 text-primary" />
               <div>
-                <p className="text-xs tracking-wide text-white/40 uppercase">{c.label}</p>
-                <p className="mt-1 text-sm text-white">{c.value}</p>
+                <p className="text-xs tracking-wide text-ink/40 uppercase">{c.label}</p>
+                <p className="mt-1 text-sm text-ink">{c.value}</p>
               </div>
             </div>
           ))}
-          <p className="text-xs leading-relaxed text-white/40">
+          <p className="text-xs leading-relaxed text-ink/40">
             These contact details are placeholders — send me the real email, phone number and
             address and I'll put them in.
           </p>
@@ -60,12 +60,12 @@ function Contact() {
             e.preventDefault();
             setSent(true);
           }}
-          className="rounded-3xl border border-white/10 bg-card/60 p-6 sm:p-8"
+          className="rounded-3xl border border-ink/10 bg-card/60 p-6 sm:p-8"
         >
           {sent ? (
             <div className="py-12 text-center">
-              <h2 className="font-askan text-2xl text-white">Message sent</h2>
-              <p className="mt-2 text-sm text-white/60">Thanks — we'll be in touch shortly.</p>
+              <h2 className="font-askan text-2xl text-ink">Message sent</h2>
+              <p className="mt-2 text-sm text-ink/60">Thanks — we'll be in touch shortly.</p>
             </div>
           ) : (
             <div className="flex flex-col gap-4">
@@ -73,11 +73,11 @@ function Contact() {
               <Field label="Email" name="email" type="email" placeholder="you@example.com" />
               <Field label="Subject" name="subject" placeholder="Team entry, media, sponsorship…" />
               <label className="flex flex-col gap-2">
-                <span className="text-xs tracking-wide text-white/50 uppercase">Message</span>
+                <span className="text-xs tracking-wide text-ink/50 uppercase">Message</span>
                 <textarea
                   required
                   rows={5}
-                  className="rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:border-primary/50 focus:outline-none"
+                  className="rounded-2xl border border-ink/10 bg-black/30 px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus:border-primary/50 focus:outline-none"
                   placeholder="Tell us a bit more…"
                 />
               </label>
@@ -108,13 +108,13 @@ function Field({
 }) {
   return (
     <label className="flex flex-col gap-2">
-      <span className="text-xs tracking-wide text-white/50 uppercase">{label}</span>
+      <span className="text-xs tracking-wide text-ink/50 uppercase">{label}</span>
       <input
         required
         name={name}
         type={type}
         placeholder={placeholder}
-        className="rounded-full border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:border-primary/50 focus:outline-none"
+        className="rounded-full border border-ink/10 bg-black/30 px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus:border-primary/50 focus:outline-none"
       />
     </label>
   );
