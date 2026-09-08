@@ -23,11 +23,11 @@ export function PageShell({
 
         <header className="mx-auto mt-16 max-w-5xl text-center sm:mt-24">
           <p className="reveal text-xs tracking-[0.35em] text-primary uppercase">{eyebrow}</p>
-          <h1 className="reveal font-askan mt-4 text-[2.25rem] leading-[1.05] tracking-tight text-white sm:text-[3.5rem] lg:text-[4.25rem]">
+          <h1 className="reveal font-askan mt-4 text-[2.25rem] leading-[1.05] tracking-tight text-ink sm:text-[3.5rem] lg:text-[4.25rem]">
             {title}
           </h1>
           {intro && (
-            <p className="reveal mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-white/60 sm:text-base">
+            <p className="reveal mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-ink/60 sm:text-base">
               {intro}
             </p>
           )}
