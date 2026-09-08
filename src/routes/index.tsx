@@ -2,6 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
+import actionNight from "@/assets/action-night.jpg";
+import fansNight from "@/assets/fans-night.jpg";
+import trophyNight from "@/assets/trophy-night.jpg";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
