@@ -39,12 +39,9 @@ function Gallery() {
       intro="A look at how Unity Cup matchdays actually feel — the noise, the lights and the long walk to the final whistle."
     >
       <div className="overflow-hidden rounded-3xl border border-ink/10">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          src={VIDEO}
+        <img
+          alt="Season highlight film placeholder"
+          src="/hero_soccer_player.jpg"
           className="h-[45vh] w-full object-cover sm:h-[60vh]"
         />
       </div>

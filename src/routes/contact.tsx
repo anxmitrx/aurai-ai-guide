@@ -36,7 +36,6 @@ function Contact() {
           {[
             { icon: Mail, label: "Email", value: "hello@unitycup.in" },
             { icon: Phone, label: "Phone", value: "+91 98000 00000" },
-            { icon: MapPin, label: "Ground office", value: "Salt Lake Sports Complex, Kolkata" },
           ].map((c) => (
             <div
               key={c.label}

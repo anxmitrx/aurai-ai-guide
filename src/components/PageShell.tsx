@@ -14,11 +14,11 @@ export function PageShell({
   children: ReactNode;
 }) {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-background">
+    <div className="relative min-h-screen overflow-x-hidden bg-background">
       <div className="pointer-events-none absolute -top-40 -right-32 h-[28rem] w-[28rem] rounded-full bg-primary/15 blur-[120px]" />
       <div className="pointer-events-none absolute top-1/2 -left-40 h-[26rem] w-[26rem] rounded-full bg-accent/10 blur-[120px]" />
 
-      <div className="relative z-10 px-4 py-4 sm:px-10 sm:py-8 lg:px-12">
+      <div className="relative z-10 bg-background px-4 py-4 sm:px-10 sm:py-8 lg:px-12 shadow-2xl pb-20">
         <SiteNav />
 
         <header className="mx-auto mt-16 max-w-5xl text-center sm:mt-24">
@@ -34,8 +34,8 @@ export function PageShell({
         </header>
 
         <main className="mx-auto mt-14 max-w-6xl pb-20">{children}</main>
-        <SiteFooter />
       </div>
+      <SiteFooter />
     </div>
   );
 }
