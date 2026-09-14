@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import logoImg from "@/assets/logo-nobg.png";
 export function Preloader() {
   const [loading, setLoading] = useState(true);
   const [fade, setFade] = useState(false);
@@ -46,7 +46,7 @@ export function Preloader() {
         <div className={`absolute flex flex-col items-center gap-8 transition-all duration-1000 ${step >= 3 ? 'scale-100 blur-none opacity-100' : 'pointer-events-none scale-95 blur-md opacity-0'}`}>
           {/* Animated logo */}
           <div className="relative h-40 w-40 overflow-hidden sm:h-56 sm:w-56">
-            <img src="/src/assets/logo-nobg.png" alt="Unity Cup Logo" className="h-full w-full object-contain" />
+            <img src={logoImg} alt="Unity Cup Logo" className="h-full w-full object-contain" />
             <div className="absolute top-0 left-[-100%] h-full w-[50%] animate-[marquee_1.5s_infinite] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
           </div>
           

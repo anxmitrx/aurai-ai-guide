@@ -2,6 +2,7 @@ import { Link, useNavigate, useLocation } from "@tanstack/react-router";
 import { Menu, X, Home, Info, Trophy, Image as ImageIcon, Mail, ShieldAlert } from "lucide-react";
 import { useState, useMemo } from "react";
 import { ExpandableTabs } from "@/components/ui/expandable-tabs";
+import logoImg from "@/assets/logo-nobg.png";
 
 const mobileLinks = [
   { to: "/", label: "Home" },
@@ -45,7 +46,7 @@ export function SiteNav() {
       
       {/* Left: Logo */}
       <Link to="/" className="flex items-center text-ink shrink-0">
-        <img src="/src/assets/logo-nobg.png" alt="Unity Cup Logo" className="h-10 w-auto object-contain" />
+        <img src={logoImg} alt="Unity Cup Logo" className="h-10 w-auto object-contain" />
       </Link>
 
       {/* Center: Desktop Animated Tabs */}
